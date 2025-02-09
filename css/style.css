@@ -1,0 +1,119 @@
+*,
+*::after,
+*::before {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: poppins;
+  src: url(../Poppins-Regular.ttf); }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: Poppins;
+  font-size: 1.4rem; }
+
+.card__features__container {
+  max-width: 60rem; }
+
+.heading {
+  text-align: center; }
+  .heading__primary {
+    font-size: 3rem; }
+    .heading__primary__main {
+      display: block;
+      color: #a3a5ae;
+      font-weight: 100;
+      letter-spacing: 1px; }
+    .heading__primary__sub {
+      display: block;
+      margin-bottom: 2rem;
+      color: #4c4e61;
+      font-weight: 700;
+      letter-spacing: 0.2rem; }
+  .heading__paragraph__text {
+    font-size: 1.4rem;
+    color: #a3a5ae;
+    width: 80%;
+    text-align: center;
+    margin: 0% auto; }
+
+main {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-items: center; }
+
+.card {
+  perspective: 150rem;
+  padding: 2rem;
+  background: #fff;
+  height: 22rem;
+  font-size: 1.7rem;
+  box-sizing: border-box;
+  max-width: 33rem;
+  box-shadow: 0.5rem 1rem 0.5rem rgba(0, 0, 0, 0.05), 0.5rem 1rem 0.5rem rgba(69, 211, 211, 0.1);
+  border-radius: 0.5rem;
+  transition: all 0.3s; }
+  .card__heading {
+    margin-bottom: 1rem;
+    color: #4c4e61; }
+  .card__paragraph__text {
+    width: 90%;
+    font-size: 1.2rem;
+    color: #a3a5ae; }
+  .card .img {
+    height: 4rem;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem; }
+  .card__styling__1 {
+    border-top: solid 0.3rem #45d3d3; }
+    .card__styling__1:hover {
+      transform: rotatey(180deg); }
+  .card__styling__2 {
+    border-top: solid 0.3rem #ea5353; }
+  .card__styling__3 {
+    border-top: solid 0.3rem #fcaf4a; }
+  .card__styling__4 {
+    border-top: solid 0.3rem #549ef2; }
+
+.horizontal {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 3rem; }
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3rem; }
+
+@media (max-width: 60rem) {
+  .card__features__container {
+    max-width: 40rem;
+    padding: 2rem;
+    width: 100%; }
+  .heading__primary {
+    font-size: 2rem; }
+    .heading__primary__main {
+      display: block; }
+    .heading__primary__sub {
+      display: block;
+      margin-bottom: 2rem;
+      color: #4c4e61;
+      font-weight: 700;
+      letter-spacing: 0.2rem; }
+  .horizontal {
+    display: flex;
+    flex-direction: column; } }
